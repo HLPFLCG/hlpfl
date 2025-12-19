@@ -4,7 +4,7 @@ compatibility_date = "2024-01-01"
 compatibility_flags = ["nodejs_compat"]
 
 # Account ID (replace with your Cloudflare account ID)
-account_id = "YOUR_ACCOUNT_ID"
+account_id = "8c74a072236761cf6126371f0b20c5a9"
 
 # Workers AI
 [ai]
