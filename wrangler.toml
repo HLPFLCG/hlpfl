@@ -49,8 +49,8 @@ API_VERSION = "v1"
 
 # Routes
 [routes]
-pattern = "api.hlpfl.space/*"
-zone_name = "hlpfl.space"
+pattern = "api.hlpfl.org/*"
+zone_name = "hlpfl.org"
 
 # Development
 [env.development]
