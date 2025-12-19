@@ -1,0 +1,38 @@
+{
+  "name": "hlpfl-space",
+  "version": "1.0.0",
+  "description": "Social Media Management Platform on Cloudflare Workers",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "test": "vitest",
+    "db:migrate": "wrangler d1 migrations apply hlpfl-space-db",
+    "db:migrate:remote": "wrangler d1 migrations apply hlpfl-space-db --remote",
+    "db:create": "wrangler d1 create hlpfl-space-db",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "social-media",
+    "cloudflare-workers",
+    "hono",
+    "d1",
+    "r2"
+  ],
+  "author": "HLPFL Team",
+  "license": "MIT",
+  "dependencies": {
+    "hono": "^4.0.0",
+    "@hono/zod-validator": "^0.2.0",
+    "zod": "^3.22.0",
+    "bcryptjs": "^2.4.3",
+    "jose": "^5.2.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240000.0",
+    "@types/bcryptjs": "^2.4.6",
+    "typescript": "^5.3.0",
+    "wrangler": "^3.22.0",
+    "vitest": "^1.2.0"
+  }
+}

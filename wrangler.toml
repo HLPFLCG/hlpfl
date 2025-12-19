@@ -1,0 +1,73 @@
+name = "hlpfl-space"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+node_compat = true
+
+# Account ID (replace with your Cloudflare account ID)
+account_id = "YOUR_ACCOUNT_ID"
+
+# Workers AI
+[ai]
+binding = "AI"
+
+# D1 Database
+[[d1_databases]]
+binding = "DB"
+database_name = "hlpfl-space-db"
+database_id = "YOUR_DATABASE_ID"
+
+# R2 Storage
+[[r2_buckets]]
+binding = "MEDIA_BUCKET"
+bucket_name = "hlpfl-space-media"
+
+# KV Namespaces
+[[kv_namespaces]]
+binding = "RATE_LIMIT"
+id = "YOUR_KV_ID"
+
+[[kv_namespaces]]
+binding = "SESSIONS"
+id = "YOUR_SESSION_KV_ID"
+
+# Environment Variables
+[vars]
+ENVIRONMENT = "production"
+API_VERSION = "v1"
+
+# Secrets (set with: wrangler secret put SECRET_NAME)
+# JWT_SECRET
+# TWITTER_CLIENT_ID
+# TWITTER_CLIENT_SECRET
+# LINKEDIN_CLIENT_ID
+# LINKEDIN_CLIENT_SECRET
+# FACEBOOK_APP_ID
+# FACEBOOK_APP_SECRET
+# INSTAGRAM_CLIENT_ID
+# INSTAGRAM_CLIENT_SECRET
+# OPENAI_API_KEY
+
+# Routes
+[routes]
+pattern = "api.hlpfl.space/*"
+zone_name = "hlpfl.space"
+
+# Development
+[env.development]
+name = "hlpfl-space-dev"
+vars = { ENVIRONMENT = "development" }
+
+[[env.development.d1_databases]]
+binding = "DB"
+database_name = "hlpfl-space-db-dev"
+database_id = "YOUR_DEV_DATABASE_ID"
+
+# Staging
+[env.staging]
+name = "hlpfl-space-staging"
+vars = { ENVIRONMENT = "staging" }
+
+[[env.staging.d1_databases]]
+binding = "DB"
+database_name = "hlpfl-space-db-staging"
+database_id = "YOUR_STAGING_DATABASE_ID"
