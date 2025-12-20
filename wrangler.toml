@@ -14,7 +14,7 @@ binding = "AI"
 [[d1_databases]]
 binding = "DB"
 database_name = "hlpfl-space-db"
-database_id = "YOUR_DATABASE_ID"
+database_id = "0d9630c8-9a7f-4511-88e7-10146f64d9ba"
 
 # R2 Storage
 [[r2_buckets]]
@@ -24,11 +24,11 @@ bucket_name = "hlpfl-space-media"
 # KV Namespaces
 [[kv_namespaces]]
 binding = "RATE_LIMIT"
-id = "YOUR_KV_ID"
+id = "77789f49a21a438da609142a6a00190c"
 
 [[kv_namespaces]]
 binding = "SESSIONS"
-id = "YOUR_SESSION_KV_ID"
+id = "674ad8838d54499a86259fd2292ab218"
 
 # Environment Variables
 [vars]
@@ -55,19 +55,46 @@ routes = [
 # Development
 [env.development]
 name = "hlpfl-space-dev"
-vars = { ENVIRONMENT = "development" }
+vars = { ENVIRONMENT = "development", API_VERSION = "v1" }
 
 [[env.development.d1_databases]]
 binding = "DB"
 database_name = "hlpfl-space-db-dev"
-database_id = "YOUR_DEV_DATABASE_ID"
+database_id = "246a5fcb-73ab-4668-9493-69acb4e3ef00"
+
+[[env.development.r2_buckets]]
+binding = "MEDIA_BUCKET"
+bucket_name = "hlpfl-space-media-dev"
+
+[[env.development.kv_namespaces]]
+binding = "RATE_LIMIT"
+preview_id = "8e7b5b207ac24676aa27c88caa91068f"
+
+[[env.development.kv_namespaces]]
+binding = "SESSIONS"
+preview_id = "200c5a7c2a814a2faf0c047215e7ab32"
 
 # Staging
 [env.staging]
 name = "hlpfl-space-staging"
-vars = { ENVIRONMENT = "staging" }
+vars = { ENVIRONMENT = "staging", API_VERSION = "v1" }
 
 [[env.staging.d1_databases]]
 binding = "DB"
 database_name = "hlpfl-space-db-staging"
-database_id = "YOUR_STAGING_DATABASE_ID"
+database_id = "be2ff60d-0623-405f-82cb-d8cb330efbde"
+
+[[env.staging.r2_buckets]]
+binding = "MEDIA_BUCKET"
+bucket_name = "hlpfl-space-media-staging"
+
+[[env.staging.kv_namespaces]]
+binding = "RATE_LIMIT"
+id = "4102d656cd4d46b4ad6db5b66fde5a05"
+
+[[env.staging.kv_namespaces]]
+binding = "SESSIONS"
+id = "98e1a4fbc1f24b5b84e8d2b4a979ef65"
+
+[env.staging.ai]
+binding = "AI"
