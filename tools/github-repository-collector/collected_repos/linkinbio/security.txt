@@ -1,0 +1,10 @@
+Contact: mailto:security@hlpfl.org
+Expires: 2025-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://hlpfl.com/.well-known/security.txt
+Policy: https://hlpfl.org/security-policy
+Acknowledgments: https://hlpfl.org/security-acknowledgments
+
+# Security Policy
+# If you discover a security vulnerability, please report it to security@hlpfl.org
+# We appreciate responsible disclosure and will respond within 48 hours.

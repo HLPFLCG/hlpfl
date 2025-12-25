@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 70.93 150">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 32.76px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        stroke-width: 14.89px;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+    <symbol id="HLPFL_Sybol_white" data-name="HLPFL Sybol white" viewBox="0 0 268.2 678">
+      <g>
+        <path class="cls-2" d="M29.78,264.29"/>
+        <g>
+          <path class="cls-2" d="M94.24,487.2l.2-282.19c0-4.67,3.57-8.46,7.97-8.46h158.36"/>
+          <circle class="cls-2" cx="86.92" cy="536.76" r="14.89"/>
+        </g>
+        <g>
+          <path class="cls-2" d="M7.45,163.75v308.67c0,8.19,6.7,14.92,14.89,14.95,0,0,66.99.26,104.12-.52,43.84-.81,89.61-4.94,114.08-28.45,31.48-31.4,25.18-82.18-18.05-102.49-18.23-9.96-37.86-16.07-81.18-16.16"/>
+          <circle class="cls-2" cx="24.32" cy="122.48" r="14.89" transform="translate(-.97 .2) rotate(-.45)"/>
+        </g>
+        <g>
+          <line class="cls-2" x1="260.46" y1="339.84" x2="58.29" y2="339.84"/>
+          <line class="cls-2" x1="35.28" y1="488.9" x2="35.41" y2="436.55"/>
+          <path class="cls-2" d="M35.2,342.22"/>
+          <path class="cls-2" d="M35.41,436.55"/>
+          <path class="cls-2" d="M35.41,436.55"/>
+          <line class="cls-2" x1="35.34" y1="419.07" x2="35.54" y2="363.21"/>
+          <path class="cls-2" d="M35.41,436.55"/>
+          <path class="cls-2" d="M35.34,419.07"/>
+          <path class="cls-2" d="M35.54,363.21"/>
+          <path class="cls-2" d="M35.48,345.73"/>
+        </g>
+        <path class="cls-2" d="M35.27,345.73l.39-168.1c0-4.75,3.3-8.6,7.36-8.6l202.84-.13c8.19,0,14.89,6.69,14.89,14.88v288.62c0,8.19-6.7,14.87-14.89,14.84l-172.54-.56c-4.71-.02-8.53-4.05-8.53-9.02V41.27"/>
+        <circle class="cls-3" cx="7.45" cy="163.31" r="7.45"/>
+        <circle class="cls-3" cx="64.78" cy="41.27" r="7.45" transform="translate(-1.34 2.18) rotate(-1.91)"/>
+        <g>
+          <path class="cls-1" d="M143.48,470.17"/>
+          <polyline class="cls-1" points="143.02 661.62 143.45 16.38 143.48 261.66"/>
+          <circle class="cls-3" cx="143.02" cy="661.62" r="16.38"/>
+          <ellipse class="cls-3" cx="143.45" cy="16.38" rx="16.41" ry="16.38"/>
+        </g>
+      </g>
+    </symbol>
+  </defs>
+  <use width="268.2" height="678" transform="translate(5.8 150) scale(.22 -.22)" xlink:href="#HLPFL_Sybol_white"/>
+</svg>

@@ -1,0 +1,89 @@
+# GitHub Repository Collector Configuration
+
+# GitHub API Settings
+github:
+  # Personal Access Token (recommended for higher rate limits)
+  # Create at: https://github.com/settings/tokens
+  token: ""  # Leave empty to use unauthenticated requests (limited to 60 requests/hour)
+  
+  # GitHub username or organization to collect from
+  username: ""  # Your GitHub username
+  organization: ""  # Optional: collect from organization instead
+
+# Collection Settings
+collection:
+  # Types of repositories to include
+  include_forks: false  # Include forked repositories
+  include_archived: false  # Include archived repositories
+  include_private: true  # Include private repositories (requires token)
+  
+  # File filtering
+  file_filters:
+    # Maximum file size in MB (skip larger files)
+    max_file_size_mb: 50
+    
+    # File extensions to exclude
+    exclude_extensions:
+      - ".exe"
+      - ".dll"
+      - ".so"
+      - ".dylib"
+      - ".bin"
+      - ".zip"
+      - ".tar"
+      - ".gz"
+      - ".rar"
+      - ".7z"
+    
+    # Directories to exclude
+    exclude_directories:
+      - "node_modules"
+      - ".git"
+      - ".vscode"
+      - ".idea"
+      - "dist"
+      - "build"
+      - "target"
+      - "__pycache__"
+      - ".pytest_cache"
+    
+    # File patterns to exclude (glob patterns)
+    exclude_patterns:
+      - "*.log"
+      - "*.tmp"
+      - "*.cache"
+      - "*.swp"
+      - "*.pyc"
+      - "*.pyo"
+      - ".DS_Store"
+      - "Thumbs.db"
+
+# Output Settings
+output:
+  # Base directory for collected files
+  base_directory: "collected_repos"
+  
+  # Organization structure
+  structure: "flat"  # Options: "flat", "by_repo", "by_owner", "by_type"
+  
+  # File naming convention
+  naming: "preserve"  # Options: "preserve", "repo_prefix", "timestamp"
+  
+  # Create metadata files
+  create_metadata: true
+  create_index: true
+
+# Advanced Settings
+advanced:
+  # Rate limiting (requests per minute)
+  rate_limit: 30
+  
+  # Parallel downloads
+  max_workers: 4
+  
+  # Retry settings
+  max_retries: 3
+  retry_delay: 1  # seconds
+  
+  # Verbose output
+  verbose: false

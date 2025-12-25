@@ -1,0 +1,17 @@
+{
+  "timestamp": "2025-12-20T00:20:35.314Z",
+  "totalIssues": 4,
+  "issues": {
+    "critical": [],
+    "high": [],
+    "medium": [
+      "Excessive use of !important (14 instances)",
+      "Mismatched try-catch blocks"
+    ],
+    "low": [],
+    "info": [
+      "Consider using <section> for better semantics",
+      "Consider using autoprefixer instead of manual -webkit- prefixes"
+    ]
+  }
+}

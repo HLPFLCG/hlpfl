@@ -1,0 +1,30 @@
+name = "socialmediamanager-api"
+main = "src/index.js"
+compatibility_date = "2024-12-17"
+compatibility_flags = ["nodejs_compat"]
+
+# Simple worker - no build needed
+account_id = "8c74a072236761cf6126371f0b20c5a9"
+
+[vars]
+NODE_ENV = "development"
+ALLOWED_ORIGINS = "https://hlpfl.space,https://socialmediamanager-api-production.hlpfl-co.workers.dev"
+
+# D1 Database for user data
+[[d1_databases]]
+binding = "DB"
+database_name = "socialmediamanager-db"
+database_id = "8860d9ea-f18a-422d-b409-f641edd83fd0"
+
+[env.production]
+name = "socialmediamanager-api-production"
+
+[env.production.vars]
+ENVIRONMENT = "production"
+NODE_ENV = "production"
+ALLOWED_ORIGINS = "https://hlpfl.space,https://socialmediamanager-api-production.hlpfl-co.workers.dev"
+
+[[env.production.d1_databases]]
+binding = "DB"
+database_name = "socialmediamanager-db"
+database_id = "8860d9ea-f18a-422d-b409-f641edd83fd0"

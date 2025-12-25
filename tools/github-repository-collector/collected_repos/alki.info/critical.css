@@ -1,0 +1,152 @@
+/* Critical CSS - Above the fold styles for alki.info */
+/* Inline this in <head> for optimal performance */
+
+/* CSS Reset & Base */
+*{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+    --bg-primary:#e5e5e5;
+    --bg-secondary:#f9fafb;
+    --text-primary:#111827;
+    --text-secondary:rgba(17,24,39,0.7);
+    --accent-primary:#153e80;
+    --accent-gradient:linear-gradient(135deg,#113671,#1c0d3f);
+    --font-primary:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+}
+
+body{
+    font-family:var(--font-primary);
+    background:var(--bg-primary);
+    color:var(--text-primary);
+    line-height:1.6;
+    overflow-x:hidden;
+}
+
+/* Loading Screen - Critical */
+.loading-screen{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:var(--bg-primary);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:9999;
+}
+
+.loading-content{text-align:center}
+
+.loading-logo{
+    width:80px;
+    height:80px;
+    margin:0 auto 24px;
+}
+
+.loading-image{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+/* Container */
+.container{
+    max-width:600px;
+    margin:0 auto;
+    padding:20px;
+    position:relative;
+    z-index:1;
+}
+
+/* Hero Section - Above the fold */
+.hero-section{
+    text-align:center;
+    padding:40px 0;
+}
+
+.hero-name{
+    font-size:48px;
+    font-weight:900;
+    color:var(--text-primary);
+    letter-spacing:0.05em;
+    text-transform:lowercase;
+    margin-bottom:12px;
+    line-height:1;
+    background:var(--accent-gradient);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+
+.hero-tagline{
+    font-size:18px;
+    font-weight:600;
+    color:var(--text-secondary);
+    letter-spacing:0.1em;
+    text-transform:lowercase;
+    margin-bottom:8px;
+}
+
+.hero-description{
+    font-size:14px;
+    color:var(--text-secondary);
+    max-width:300px;
+    margin:0 auto;
+}
+
+/* Profile Image */
+.profile-3d{
+    perspective:1000px;
+    margin-bottom:8px;
+}
+
+.profile-frame{
+    width:200px;
+    height:266px;
+    margin:0 auto;
+    position:relative;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.profile-image{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+/* Stats - Above the fold */
+.stats-container{
+    display:flex;
+    justify-content:center;
+    gap:32px;
+    margin-top:32px;
+}
+
+.stat-item{
+    text-align:center;
+}
+
+.stat-number{
+    display:block;
+    font-size:32px;
+    font-weight:900;
+    color:var(--text-primary);
+    margin-bottom:4px;
+}
+
+.stat-label{
+    display:block;
+    font-size:12px;
+    color:var(--text-secondary);
+    text-transform:lowercase;
+}
+
+/* Mobile Responsive */
+@media(max-width:768px){
+    .hero-name{font-size:36px}
+    .stats-container{gap:24px}
+    .stat-number{font-size:24px}
+}

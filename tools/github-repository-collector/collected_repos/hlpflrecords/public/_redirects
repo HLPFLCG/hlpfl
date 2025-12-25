@@ -1,0 +1,12 @@
+# Redirect /home to /
+/home / 301
+
+# Handle trailing slashes
+/about /about/ 301
+/artists /artists/ 301
+/releases /releases/ 301
+/contact /contact/ 301
+/news /news/ 301
+
+# SPA fallback - serve index.html for all routes (for client-side routing)
+/* /404.html 404

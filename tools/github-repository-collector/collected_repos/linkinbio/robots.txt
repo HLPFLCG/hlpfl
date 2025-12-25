@@ -1,0 +1,14 @@
+# robots.txt for HLPFL Link-in-Bio
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://hlpfl.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow specific paths (if any)
+# Disallow: /admin/
+# Disallow: /private/

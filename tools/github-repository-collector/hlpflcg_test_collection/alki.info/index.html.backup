@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alki</title>
+    <meta name="description" content="alki - boundary-pushing rock music artist. Stream exclusive tracks, join the community, and experience the future of rock.">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="keywords" content="alki, rock music, alternative, indie artist, music tech, web3 music">
+    <meta name="author" content="alki">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="alki • Future of Rock">
+    <meta property="og:description" content="Boundary-pushing rock music. Exclusive tracks, community access, and the future of music.">
+    <meta property="og:image" content="https://alki.info/tac.jpeg">
+    <meta property="og:url" content="https://alki.info">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="alki">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="alki • Future of Rock">
+    <meta name="twitter:description" content="Boundary-pushing rock music. Exclusive tracks, community access.">
+    <meta name="twitter:image" content="https://alki.info/tac.jpeg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://alki.info">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/logov1/newalkilogo.svg">
+    <link rel="apple-touch-icon" href="images/logov1/newalkilogo.svg">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" as="style">
+    <link rel="preload" href="style-simplified.css" as="style">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="style-simplified.css">
+    
+    <!-- Custom Scripts -->
+    <script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+    <script src="scripts.js" defer></script>
+</head>
+<body class="loading">
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <img src="images/logov1/newalkilogo.svg" alt="alki" class="loading-image">
+            </div>
+            <div class="loading-bar">
+                <div class="loading-progress">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Animated Background -->
+    <div class="animated-bg">
+        <div class="particle" id="particle1"></div>
+        <div class="particle" id="particle2"></div>
+        <div class="particle" id="particle3"></div>
+        <div class="particle" id="particle4"></div>
+        <div class="particle" id="particle5"></div>
+        <div class="gradient-orb"></div>
+    </div>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MusicGroup",
+        "name": "alki",
+        "description": "Boundary-pushing rock music artist",
+        "image": "https://alki.info/tac.jpeg",
+        "url": "https://alki.info",
+        "sameAs": [
+            "https://instagram.com/alkiotis",
+            "https://open.spotify.com/artist/1Jof1vMpSF5pIWUvG9cizl",
+            "https://music.apple.com/us/artist/alki/1806145617",
+            "https://app.grouped.com/everythingalki"
+        ],
+        "genre": ["Rock", "Alternative", "Indie"],
+        "publisher": {
+            "@type": "Organization",
+            "name": "HLPFL",
+            "url": "https://hlpfl.org"
+        }
+    }
+    </script>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Hero Section -->
+        <header class="hero-section">
+            <div class="hero-content">
+                <div class="hero-te">
+                    <p class="hero-tagline">rock • weed • tofu</p>
+                    <p class="hero-description">boundary-pushing music for the digital age</p>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="profile-3d">
+                        <div class="profile-frame">
+                            <img src="tac.jpeg" 
+                                 alt="alki" 
+                                 class="profile-image"
+                                 loading="lazy">
+                            <div class="profile-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="stats-container">
+                <div class="stat-item" data-count="37">
+                    <span class="stat-number">37</span>
+                    <span class="stat-label">songs</span>
+                </div>
+                <div class="stat-item" data-count="48000">
+                    <span class="stat-number">48k</span>
+                    <span class="stat-label">listeners</span>
+                </div>
+                <div class="stat-item" data-count="2200000">
+                    <span class="stat-number">2.2m</span>
+                    <span class="stat-label">plays</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Featured Release -->
+            <section class="featured-release">
+                <div class="section-header">
+                    <h2 class="section-title">latest release</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="release-embed">
+                    <iframe data-testid="embed-iframe" 
+                            src="https://open.spotify.com/embed/album/468FaHLWX75g0RJdoEUABD?utm_source=generator&theme=0" 
+                            width="100%" 
+                            height="352" 
+                            frameBorder="0" 
+                            allowfullscreen="" 
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                            loading="lazy"
+                            class="spotify-embed">
+                    </iframe>
+                </div>
+            </section>
+
+            <!-- Exclusive Drop -->
+            <section class="exclusive-drop">
+                <div class="exclusive-content">
+                    <div class="exclusive-header">
+                        <div class="exclusive-badge">🔥 exclusive</div>
+                        <h2 class="exclusive-title">free unreleased track</h2>
+                        <p class="exclusive-description">
+                            join the inner circle for instant access to music you won't find anywhere else
+                        </p>
+                    </div>
+                    
+                    <div class="exclusive-embed">
+                        <iframe src="https://app.grouped.com/alki/s/ri2rk6" 
+                                width="100%" 
+                                height="400" 
+                                frameBorder="0" 
+                                scrolling="no"
+                                class="grouped-embed">
+                        </iframe>
+                    </div>
+                    
+                    <div class="exclusive-features">
+                        <div class="feature-item">
+                            <i class="fas fa-bolt"></i>
+                            <span>instant access</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-crown"></i>
+                            <span>community member</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-gift"></i>
+                            <span>exclusive content</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Links -->
+            <section class="quick-links">
+                <div class="section-header">
+                    <h2 class="section-title">connect</h2>
+                    <div class="section-line"></div>
+                </div>
+                
+                <div class="links-grid">
+                    <a href="https://instagram.com/alkiotis" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="link-card instagram-link"
+                       data-platform="instagram">
+                        <div class="link-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="link-content">
+                            <span class="link-title">instagram</span>
+                            <span class="link-subtitle">daily life & updates</span>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://app.grouped.com/everythingalki" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="link-card grouped-link"
+                       data-platform="grouped">
+                        <div class="link-icon">
+                            <img src="groupedlogo.png" alt="Grouped" class="platform-logo">
+                        </div>
+                        <div class="link-content">
+                            <span class="link-title">grouped</span>
+                            <span class="link-subtitle">bts & community</span>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://open.spotify.com/artist/1Jof1vMpSF5pIWUvG9cizl?si=90TnhiklR9S8PBOtj8RkOg" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="link-card spotify-link"
+                       data-platform="spotify">
+                        <div class="link-icon">
+                            <i class="fab fa-spotify"></i>
+                        </div>
+                        <div class="link-content">
+                            <span class="link-title">spotify</span>
+                            <span class="link-subtitle">stream all tracks</span>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://music.apple.com/us/artist/alki/1806145617" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="link-card apple-link"
+                       data-platform="apple-music">
+                        <div class="link-icon">
+                            <i class="fab fa-apple"></i>
+                        </div>
+                        <div class="link-content">
+                            <span class="link-title">apple music</span>
+                            <span class="link-subtitle">stream & download</span>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+
+                    <a href="https://hlpfl.org" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="link-card label-link"
+                       data-platform="label">
+                        <div class="link-icon">
+                            <img src="blacklogonobackgroudn.svg" alt="HLPFL" class="platform-logo">
+                        </div>
+                        <div class="link-content">
+                            <span class="link-title">hlpfl</span>
+                            <span class="link-subtitle">label & management</span>
+                        </div>
+                        <div class="link-arrow">
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="https://instagram.com/alkiotis" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://open.spotify.com/artist/1Jof1vMpSF5pIWUvG9cizl?si=90TnhiklR9S8PBOtj8RkOg" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Spotify">
+                        <i class="fab fa-spotify"></i>
+                    </a>
+                    <a href="https://app.grouped.com/everythingalki" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Grouped">
+                        <img src="groupedlogo.png" alt="Grouped" class="footer-logo">
+                    </a>
+                </div>
+                
+                <div class="footer-legal">
+                    <a href="https://hlpfl.org/privacy" target="_blank" rel="noopener noreferrer" class="legal-link">Privacy</a>
+                    <span class="separator">•</span>
+                    <a href="https://hlpfl.org/terms" target="_blank" rel="noopener noreferrer" class="legal-link">Terms</a>
+                    <span class="separator">•</span>
+                    <button id="cookieSettings" class="cookie-settings-btn">Cookies</button>
+                </div>
+                
+                <p class="copyright">© 2024 alki • HLPFL</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-banner" class="cookie-banner" style="display: none;">
+        <div class="cookie-content">
+            <p>This site uses cookies to enhance your experience. By continuing, you agree to our use of cookies.</p>
+            <div class="cookie-actions">
+                <button id="accept-cookies" class="cookie-btn accept">Accept</button>
+                <button id="decline-cookies" class="cookie-btn decline">Decline</button>
+                <a href="https://hlpfl.org/privacy" target="_blank" class="cookie-link">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-M8PZP937');</script>
+</body>
+</html>
