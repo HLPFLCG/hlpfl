@@ -1,0 +1,6 @@
+2025-12-25 16:40:43,947 - WARNING - No token provided. Using unauthenticated access (rate limited).
+2025-12-25 16:40:43,947 - INFO - Starting GitHub repository collection...
+2025-12-25 16:40:43,947 - DEBUG - Starting new HTTPS connection (1): api.github.com:443
+2025-12-25 16:40:44,068 - DEBUG - https://api.github.com:443 "GET /orgs/HLPFLCG HTTP/1.1" 404 122
+2025-12-25 16:40:44,068 - ERROR - Error fetching repositories: 404 {"message": "Not Found", "documentation_url": "https://docs.github.com/rest/orgs/orgs#get-an-organization", "status": "404"}
+2025-12-25 16:40:44,069 - ERROR - No repositories found to collect.

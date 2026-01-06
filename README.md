@@ -283,7 +283,50 @@ hlpfl/
 └── package.json             # Dependencies
 ```
 
-## 🎯 Roadmap
+## 🛠️ GitHub Repository Collector
+
+   The HLPFL platform includes a comprehensive **GitHub Repository Collector** tool for automated collection, analysis, and management of all HLPFL GitHub repositories.
+
+   ### Features
+   - ✅ **Automated Collection**: Collect all 8 HLPFL repositories with smart filtering
+   - ✅ **Detailed Analysis**: Technology stack documentation and dependency analysis
+   - ✅ **Automated Workflows**: GitHub Actions for daily collection and reporting
+   - ✅ **Development Tools**: Quick setup for local development environments
+   - ✅ **Backup & Archive**: Automated backup of all repository code
+
+   ### Quick Start
+   ```bash
+   # Navigate to the collector tool
+   cd tools/github-repository-collector
+
+   # Run collection (bash script - recommended)
+   ./collect_hlpflcg_repos.sh
+
+   # Or use Python tool
+   python3 hlpflcg_collector.py --config config_hlpflcg_individual.yaml
+   ```
+
+   ### What's Collected
+   | Repository | Size | Purpose |
+   |------------|------|---------|
+   | hlpflrecords | 117 MB | Main music platform |
+   | linkinbio | 29 MB | Link-in-bio management |
+   | alki.info | 8.9 MB | Content platform |
+   | hlpflforms | 1.3 MB | Forms system |
+   | socialmediamanager | 1.1 MB | Social media tools |
+   | chatbot-blank | 240 KB | Chatbot template |
+   | whitelabellinkinbio | 172 KB | White-label solution |
+   | googletagmanager | 124 KB | Analytics integration |
+
+   ### Automated Workflow
+   - **Daily Collection**: Runs automatically via GitHub Actions at 2 AM UTC
+   - **Artifact Storage**: Collections stored as workflow artifacts for 30 days
+   - **Analysis Reports**: Detailed analysis and metrics generated
+   - **Git Integration**: Changes committed back to repository
+
+   **Documentation**: [tools/github-repository-collector/README.md](tools/github-repository-collector/README.md)
+
+   ## 🎯 Roadmap
 
 ### ✅ Phase 1: Backend (Complete)
 - [x] Authentication & authorization

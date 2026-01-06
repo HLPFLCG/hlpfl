@@ -1,0 +1,104 @@
+{
+  "name": "alki - musician",
+  "short_name": "alki",
+  "description": "28 ",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["music", "entertainment", "social"],
+  "shortcuts": [
+    {
+      "name": "Listen to Music",
+      "short_name": "Music",
+      "description": "Stream alki's music on all platforms",
+      "url": "https://open.spotify.com/album/468FaHLWX75g0RJdoEUABD?si=_v0Am_BwQauTs6DlhR4FQA",
+      "icons": [
+        {
+          "src": "images/icons/music-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Follow on Instagram",
+      "short_name": "Instagram",
+      "description": "Follow alki on Instagram",
+      "url": "https://instagram.com/alkiotis",
+      "icons": [
+        {
+          "src": "images/icons/instagram-96x96.png",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "icons": [
+    {
+      "src": "images/Artboard 1.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "images/Artboard 1.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "images/Artboard 1@2x.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "images/Artboard 1@2x.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "images/Artboard 1@2x.png",
+      "sizes": "152x152",
+      "type": "image/png"
+    },
+    {
+      "src": "images/Artboard 1@3x.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/Artboard 1@3x.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "images/Artboard 1@4x.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "images/wall.jpeg",
+      "sizes": "375x667",
+      "type": "image/jpeg",
+      "form_factor": "narrow",
+      "label": "alki mobile view - music links and social media"
+    },
+    {
+      "src": "images/tac.jpeg",
+      "sizes": "1280x720",
+      "type": "image/jpeg",
+      "form_factor": "wide",
+      "label": "alki desktop view - professional music portfolio"
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  }
+}

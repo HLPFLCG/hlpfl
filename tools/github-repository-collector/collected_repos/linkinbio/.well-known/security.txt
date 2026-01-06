@@ -1,0 +1,8 @@
+Contact: https://hlpfl.org/contact/
+Expires: 2026-12-31T23:59:59.000Z
+Preferred-Languages: en
+Canonical: https://hlpfl.info/.well-known/security.txt
+
+# Security Policy
+# If you discover a security vulnerability, please report it to us via the contact page.
+# We appreciate responsible disclosure and will respond as quickly as possible.

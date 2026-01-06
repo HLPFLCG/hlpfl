@@ -1,0 +1,19 @@
+{
+  "name": "alki-info",
+  "version": "1.0.0",
+  "description": "Professional link-in-bio for musician alki",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8080",
+    "build": "echo 'Static site - no build needed'"
+  },
+  "keywords": [
+    "music",
+    "artist",
+    "link-in-bio",
+    "portfolio",
+    "hlpfl"
+  ],
+  "author": "HLPFL"
+}
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://hlpfl.com/</loc>
+        <lastmod>2024-12-19</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://hlpfl.info/images/founder/0914B329-9D3E-421B-95D9-D027EC731771.jpeg</image:loc>
+            <image:title>HLPFL Records</image:title>
+        </image:image>
+    </url>
+</urlset>

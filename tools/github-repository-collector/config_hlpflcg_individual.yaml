@@ -1,0 +1,97 @@
+# HLPFLCG Individual Repositories - GitHub Repository Collector Configuration
+
+# GitHub API Settings
+github:
+  # Personal Access Token - Optional for public repos
+  # Create at: https://github.com/settings/tokens
+  token: ""  # Leave empty for public repos
+  
+  # Individual repositories to collect
+  repositories:
+    - "HLPFLCG/hlpflrecords"
+    - "HLPFLCG/alki.info"
+    - "HLPFLCG/hlpflforms"
+    - "HLPFLCG/socialmediamanager"
+    - "HLPFLCG/linkinbio"
+    - "HLPFLCG/whitelabellinkinbio"
+    - "HLPFLCG/chatbot-blank"
+    - "HLPFLCG/googletagmanager"
+
+# Collection Settings
+collection:
+  # Types of repositories to include
+  include_forks: false  # Don't include forked repositories
+  include_archived: true  # Include archived repositories for complete backup
+  include_private: false  # These are public repos
+  
+  # File filtering - Optimized for web development projects
+  file_filters:
+    # Maximum file size in MB
+    max_file_size_mb: 100  # Larger limit for web assets
+    
+    # File extensions to exclude
+    exclude_extensions:
+      - ".exe"
+      - ".dll"
+      - ".so"
+      - ".dylib"
+      - ".bin"
+      # Keep common web assets but exclude very large files
+    
+    # Directories to exclude
+    exclude_directories:
+      - "node_modules"  # npm dependencies (can be reinstalled)
+      - ".git"  # Git metadata
+      - ".next"  # Next.js build cache
+      - ".vercel"  # Vercel deployment cache
+      - "dist"  # Build output
+      - "build"  # Build output
+      - ".cache"  # Various caches
+      - "__pycache__"  # Python cache
+      - ".pytest_cache"  # Python test cache
+      - "coverage"  # Test coverage reports
+      - ".turbo"  # Turborepo cache
+      - ".wrangler"  # Cloudflare Wrangler cache
+    
+    # File patterns to exclude (glob patterns)
+    exclude_patterns:
+      - "*.log"
+      - "*.tmp"
+      - "*.cache"
+      - "*.swp"
+      - ".DS_Store"
+      - "Thumbs.db"
+      - "*.map"  # Source maps (can be regenerated)
+      - "package-lock.json"  # Can be regenerated
+      - "yarn.lock"  # Can be regenerated
+      - "pnpm-lock.yaml"  # Can be regenerated
+
+# Output Settings
+output:
+  # Base directory for collected files
+  base_directory: "hlpflcg_collection"
+  
+  # Organization structure - by_repo keeps each project separate
+  structure: "by_repo"  # Options: "flat", "by_repo", "by_owner", "by_type"
+  
+  # File naming convention
+  naming: "preserve"  # Keep original file names
+  
+  # Create metadata files
+  create_metadata: true
+  create_index: true
+
+# Advanced Settings
+advanced:
+  # Rate limiting (requests per minute)
+  rate_limit: 45  # Higher rate for faster collection
+  
+  # Parallel downloads
+  max_workers: 6  # More parallel downloads for efficiency
+  
+  # Retry settings
+  max_retries: 3
+  retry_delay: 2  # seconds
+  
+  # Verbose output
+  verbose: true  # Detailed logging for monitoring

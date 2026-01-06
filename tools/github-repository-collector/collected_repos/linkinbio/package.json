@@ -1,0 +1,41 @@
+{
+  "name": "custom-link-in-bio",
+  "version": "1.0.0",
+  "description": "A customizable link-in-bio solution built with vanilla JavaScript and hosted on Cloudflare Pages",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx live-server --port=3000 --host=localhost",
+    "build": "echo 'Build complete - static files ready for deployment'",
+    "deploy": "npm run build && echo 'Ready for Cloudflare Pages deployment'",
+    "preview": "npx live-server --port=3001 --host=localhost",
+    "lint": "npx eslint *.js",
+    "format": "npx prettier --write *.html *.css *.js *.json *.md"
+  },
+  "keywords": [
+    "link-in-bio",
+    "bio-link",
+    "social-media",
+    "portfolio",
+    "cloudflare-pages",
+    "static-site",
+    "vanilla-javascript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "live-server": "^1.2.0",
+    "prettier": "^3.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/custom-link-in-bio.git"
+  },
+  "homepage": "https://your-project.pages.dev",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ]
+}

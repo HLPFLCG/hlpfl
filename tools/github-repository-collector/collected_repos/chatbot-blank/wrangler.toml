@@ -1,0 +1,24 @@
+name = "hlpfl-chatbot"
+main = "worker.js"
+compatibility_date = "2024-12-01"
+
+# Production environment
+[env.production]
+name = "hlpfl-chatbot-production"
+routes = [
+  { pattern = "hlpfl.io/*", zone_name = "hlpfl.io" }
+]
+
+# Staging environment
+[env.staging]
+name = "hlpfl-chatbot-staging"
+routes = [
+  { pattern = "staging.hlpfl.io/*", zone_name = "hlpfl.io" }
+]
+
+# Environment variables
+[vars]
+ENVIRONMENT = "production"
+COMPANY_NAME = "HLPFL Records"
+LOCATION = "Grand Rapids, Michigan"
+VERSION = "2.0.0"
